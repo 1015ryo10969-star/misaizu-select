@@ -15,9 +15,7 @@ function refresh() {
   sections.forEach(section => section.hidden = ![...section.querySelectorAll('[data-card]')].some(c => !c.hidden));
   document.querySelector('#result-count').textContent = `${count}件のおすすめ記事`;
   document.querySelector('#empty-state').hidden = count !== 0;
-  document.querySelectorAll('[data-scheduled]').forEach(el => el.hidden = !isCurrent(el));
-  const features = [...document.querySelectorAll('#featured [data-scheduled]')];
-  document.querySelector('#feature-empty').hidden = features.some(e => !e.hidden);
+  document.querySelectorAll('#on-air[data-scheduled]').forEach(el => el.hidden = !isCurrent(el));
 }
 document.querySelectorAll('[data-filter]').forEach(button => button.addEventListener('click', () => {
   filter = button.dataset.filter;

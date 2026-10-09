@@ -12,3 +12,6 @@
 .worlds-figure figcaption{display:grid;grid-template-columns:repeat(3,1fr);padding:16px 0;border-bottom:1px solid var(--line);gap:12px;text-align:center;font-family:var(--serif);font-size:16px}
 .worlds-figure figcaption span+span{border-left:1px solid var(--line)}
 @media(max-width:700px){.worlds{padding-top:37px}.worlds .section-head h2{font-size:25px}.worlds-figure figcaption{font-size:14px;gap:5px;padding:13px 0}.worlds .section-head p{font-size:14px}}
+
+/* Overlapping scheduled features retain the existing card layout. */
+#feature-list .feature + .feature{margin-top:24px}
