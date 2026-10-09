@@ -15,3 +15,24 @@
 
 /* Overlapping scheduled features retain the existing card layout. */
 #feature-list .feature + .feature{margin-top:24px}
+
+/* The four home sites share SELECT's editorial spacing and quiet accent colors. */
+.site-directory{padding-top:42px;padding-bottom:30px}
+.site-directory .section-head h2{font-family:var(--serif);font-size:30px;letter-spacing:.035em;line-height:1.5}
+.site-directory-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px}
+.site-card{min-width:0;display:flex;flex-direction:column;overflow:hidden;border:1px solid var(--line);border-radius:5px;background:#fffefa}
+.site-card-media{display:block;aspect-ratio:1.8;overflow:hidden;background:#ebece7}
+.site-card-media img{width:100%;height:100%;object-fit:contain;transition:transform .3s ease}
+.site-card-oshi .site-card-media img,.site-card-portal .site-card-media img{object-fit:cover;object-position:center}
+.site-card:hover .site-card-media img{transform:scale(1.02)}
+.site-card-body{display:flex;flex:1;flex-direction:column;padding:22px 25px 24px}
+.site-card-kicker{font:11px Georgia,serif;letter-spacing:.14em;color:var(--green)}
+.site-card-oshi .site-card-kicker{color:var(--rose)}
+.site-card-ai .site-card-kicker{color:var(--blue)}
+.site-card-note .site-card-kicker{color:var(--purple)}
+.site-card h3{font:500 22px/1.55 var(--serif);margin:9px 0 7px}
+.site-card p{font-size:14px;line-height:1.85;color:var(--muted);margin:0 0 17px}
+.site-card-link{align-self:flex-start;min-height:44px;display:inline-flex;align-items:center;gap:12px;margin-top:auto;border-bottom:1px solid #a1ad9f;font-size:13px;color:var(--green)}
+.site-card-link span{font-size:17px}
+@media(max-width:700px){.site-directory{padding-top:38px;padding-bottom:10px}.site-directory .section-head h2{font-size:24px}.site-directory-grid{grid-template-columns:1fr;gap:20px}.site-card-body{padding:18px 20px 21px}.site-card h3{font-size:21px}.site-card p{font-size:15px}.site-card-media{aspect-ratio:1.75}}
+@media(prefers-reduced-motion:reduce){.site-card-media img{transition:none}}
