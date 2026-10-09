@@ -1,0 +1,48 @@
+{
+  "timezone": "Asia/Tokyo",
+  "seed": "misaizu-select-featured-v1",
+  "articles": [
+    {
+      "id": "web-news",
+      "title": "推し活も、AIも。\n今週の美斉津商店WEB。",
+      "description": "各媒体の気になる記事を、ひとつの便りに。9月26日〜10月2日の活動を、店主とAIチームの通信から振り返ります。",
+      "url": "https://misaizushoten.oshikatsuouenblog.com/2026/10/03/1279/",
+      "image": "assets/featured.webp",
+      "imageAlt": "花や緑に囲まれた、記憶の街の商店街のイラスト",
+      "category": "美斉津商店WEB通信",
+      "buttonText": "特集を読む",
+      "startDate": null,
+      "endDate": null,
+      "enabled": true,
+      "priority": 100
+    },
+    {
+      "id": "ai-team",
+      "title": "AIを競わせず、チームにする。",
+      "description": "人が指揮をとり、それぞれの得意を活かす。「チーム記憶の街」の役割分担。",
+      "url": "https://ai-tools.oshikatsuouenblog.com/2025/11/28/ai-team-hio/",
+      "image": "assets/ai-team.webp",
+      "imageAlt": "テーブルを囲んで話し合う記憶の街のチームのイラスト",
+      "category": "AI共創",
+      "buttonText": "記事を読む",
+      "startDate": null,
+      "endDate": null,
+      "enabled": true,
+      "priority": 50
+    },
+    {
+      "id": "note-story",
+      "title": "読者にちゃんと役立つ記事を、つくりたい。",
+      "description": "企業案件でも大切にしたいこと。人とAIでつくるコンテンツへの想い。",
+      "url": "https://note.com/loyal_gnu2078/n/n1a6a9def1bc1",
+      "image": "assets/note-story.webp",
+      "imageAlt": "本と机が並ぶ、あたたかな光の制作室のイラスト",
+      "category": "制作の裏側",
+      "buttonText": "noteを見る",
+      "startDate": null,
+      "endDate": null,
+      "enabled": true,
+      "priority": 50
+    }
+  ]
+}
