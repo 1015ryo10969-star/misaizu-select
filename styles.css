@@ -36,3 +36,28 @@
 .site-card-link span{font-size:17px}
 @media(max-width:700px){.site-directory{padding-top:38px;padding-bottom:10px}.site-directory .section-head h2{font-size:24px}.site-directory-grid{grid-template-columns:1fr;gap:20px}.site-card-body{padding:18px 20px 21px}.site-card h3{font-size:21px}.site-card p{font-size:15px}.site-card-media{aspect-ratio:1.75}}
 @media(prefers-reduced-motion:reduce){.site-card-media img{transition:none}}
+
+/* A short-lived editorial highlight directly below the introduction. */
+.pickup{padding-top:44px;padding-bottom:18px}
+.pickup-card{display:grid;grid-template-columns:1.12fr 1fr;align-items:center;overflow:hidden;border:1px solid #dedbd0;border-radius:5px;background:#f2efe8}
+.pickup-media{display:block;min-width:0;align-self:stretch;background:#e9e1d5}
+.pickup-media img{width:100%;height:100%;object-fit:contain;aspect-ratio:780/408}
+.pickup-copy{padding:28px 35px}
+.pickup-kicker{display:block;color:var(--rose);font:12px Georgia,serif;letter-spacing:.16em}
+.pickup-copy h3{font:500 28px/1.55 var(--serif);margin:12px 0}
+.pickup-copy p{font-size:15px;line-height:1.9;color:var(--muted);margin:0 0 10px}
+.pickup-until{display:block;margin-bottom:20px;font-size:13px;color:var(--rose)}
+/* The four contact routes remain readable within the existing ABOUT panel. */
+.contact-routes{display:grid;gap:9px;margin-top:20px}
+.contact-route{position:relative;display:block;padding:11px 44px 12px 15px;border:1px solid var(--line);border-left:3px solid var(--green);border-radius:4px;background:#fffefa}
+.contact-route:hover{background:#f3f5f0}
+.contact-route-kicker{display:block;font:10px Georgia,serif;letter-spacing:.13em;color:var(--muted)}
+.contact-route strong{display:block;margin:2px 0;font:500 17px/1.5 var(--serif)}
+.contact-route small{display:block;color:var(--muted);font-size:12px;line-height:1.6}
+.contact-route-arrow{position:absolute;right:17px;top:50%;transform:translateY(-50%);font-size:19px;color:var(--green)}
+.route-oshi{border-left-color:var(--rose)}.route-ai{border-left-color:var(--blue)}.route-note{border-left-color:var(--purple)}
+.about-contact .contact-note{margin:17px 0 0;font-size:12px;line-height:1.8}
+@media(max-width:700px){.pickup{padding-top:33px;padding-bottom:8px}.pickup-card{grid-template-columns:1fr}.pickup-media img{height:auto}.pickup-copy{padding:24px 22px 25px}.pickup-copy h3{font-size:24px}.pickup-copy p{font-size:15px}.contact-routes{margin-top:17px}.contact-route strong{font-size:17px}}
+
+.about-contact{scroll-margin-top:24px}
+@media(max-width:700px){.nav .contact-nav{display:block;border:0;padding:3px 0;font-size:12px}}
