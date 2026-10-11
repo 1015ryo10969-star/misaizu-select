@@ -1,0 +1,20 @@
+{
+  "timezone": "Asia/Tokyo",
+  "seed": "misaizu-select-pickup",
+  "articles": [
+    {
+      "id": "prime-thanksgiving-2026",
+      "title": "Amazon Prime感謝祭2026 特集",
+      "description": "作業ガジェット・推し活・暮らしの注目商品30選をまとめた特集です。",
+      "url": "https://note.com/loyal_gnu2078/n/nb2a784c0084f",
+      "image": "assets/prime-thanksgiving-2026.webp",
+      "imageAlt": "Amazon Prime感謝祭2026 おすすめ30選。秋の街と作業ガジェットを描いた特集画像",
+      "category": "期間限定の特集",
+      "buttonText": "特集を見る",
+      "startDate": null,
+      "endDate": "2026-10-19",
+      "enabled": true,
+      "priority": 100
+    }
+  ]
+}
