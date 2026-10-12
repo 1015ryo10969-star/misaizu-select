@@ -61,3 +61,9 @@
 
 .about-contact{scroll-margin-top:24px}
 @media(max-width:700px){.nav .contact-nav{display:block;border:0;padding:3px 0;font-size:12px}}
+
+/* Keep RYO's complete illustration visible in the existing note card. */
+#article-note-ryo .note-ryo-visual{position:relative;background:#294739}
+#article-note-ryo .note-ryo-visual img{object-fit:contain}
+.image-disclaimer{position:absolute;right:8px;bottom:8px;left:8px;padding:3px 8px;border-radius:3px;background:rgba(250,249,245,.93);color:var(--ink);font-size:11px;line-height:1.5}
+.route-general{margin-top:4px;background:#f1f5ee}
