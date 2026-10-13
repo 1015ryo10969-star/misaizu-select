@@ -13,16 +13,16 @@
     return node;
   }
 
-  function card(article) {
-    const wrapper = element('article', 'pickup-card');
+  function card(article, index) {
+    const wrapper = element('article', index ? 'pickup-card pickup-card-secondary' : 'pickup-card');
     const imageLink = element('a', 'pickup-media');
     imageLink.href = article.url;
     imageLink.setAttribute('aria-label', `${article.title}を見る`);
     const image = element('img');
     image.src = article.image;
     image.alt = article.imageAlt;
-    image.width = 780;
-    image.height = 408;
+    image.width = article.imageWidth || 780;
+    image.height = article.imageHeight || 408;
     image.loading = 'lazy';
     image.decoding = 'async';
     imageLink.append(image);
@@ -35,7 +35,7 @@
       const [, month, day] = article.endDate.split('-');
       copy.append(element('span', 'pickup-until', `${Number(month)}月${Number(day)}日まで`));
     }
-    const button = element('a', 'button green', article.buttonText || '特集を見る');
+    const button = element('a', index ? 'button rose' : 'button green', article.buttonText || '特集を見る');
     button.href = article.url;
     copy.append(button);
     wrapper.append(imageLink, copy);
@@ -45,16 +45,15 @@
   function refresh() {
     if (!config) return;
     const selected = SelectSchedule.select(config);
-    const article = selected.articles[0];
-    if (!article) {
+    if (!selected.articles.length) {
       mount.replaceChildren();
       section.hidden = true;
       renderedKey = '';
       return;
     }
-    const key = JSON.stringify(article);
+    const key = JSON.stringify(selected.articles);
     if (key !== renderedKey) {
-      mount.replaceChildren(card(article));
+      mount.replaceChildren(...selected.articles.map(card));
       renderedKey = key;
     }
     section.hidden = false;
