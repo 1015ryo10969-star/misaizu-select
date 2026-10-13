@@ -15,6 +15,22 @@
       "endDate": "2026-10-19",
       "enabled": true,
       "priority": 100
+    },
+    {
+      "id": "hana-prime-thanksgiving-2026",
+      "title": "HANA × Amazon Prime感謝祭2026",
+      "description": "HANAメンバーが選んだお気に入りアイテムやCDを、美斉津商店WEBの花・植物キャラクターたちと紹介。Amazon公式のHANA特設企画もあわせてチェックできます。",
+      "url": "https://note.com/loyal_gnu2078/n/n0e787ccc46bc",
+      "image": "assets/hana-prime-thanksgiving-2026.webp",
+      "imageAlt": "花と植物、音楽のモチーフで彩ったHANA特設ページのオリジナル画像",
+      "imageWidth": 1200,
+      "imageHeight": 675,
+      "category": "期間限定の特集",
+      "buttonText": "HANA特集を見る →",
+      "startDate": "2026-10-14",
+      "endDate": "2026-10-19",
+      "enabled": true,
+      "priority": 90
     }
   ]
 }
