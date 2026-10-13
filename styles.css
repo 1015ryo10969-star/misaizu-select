@@ -47,6 +47,12 @@
 .pickup-copy h3{font:500 28px/1.55 var(--serif);margin:12px 0}
 .pickup-copy p{font-size:15px;line-height:1.9;color:var(--muted);margin:0 0 10px}
 .pickup-until{display:block;margin-bottom:20px;font-size:13px;color:var(--rose)}
+/* A quieter, floral companion card follows the main Prime feature. */
+.pickup-card-secondary{grid-template-columns:.96fr 1.04fr;margin-top:18px;background:#f8f4f1;border-color:#e6dcd8}
+.pickup-card-secondary .pickup-media{background:#f1e9e5}
+.pickup-card-secondary .pickup-media img{aspect-ratio:16/9}
+.pickup-card-secondary .pickup-copy h3{font-size:24px}
+.pickup-card-secondary .pickup-copy{padding:25px 32px}
 /* The four contact routes remain readable within the existing ABOUT panel. */
 .contact-routes{display:grid;gap:9px;margin-top:20px}
 .contact-route{position:relative;display:block;padding:11px 44px 12px 15px;border:1px solid var(--line);border-left:3px solid var(--green);border-radius:4px;background:#fffefa}
@@ -58,6 +64,7 @@
 .route-oshi{border-left-color:var(--rose)}.route-ai{border-left-color:var(--blue)}.route-note{border-left-color:var(--purple)}
 .about-contact .contact-note{margin:17px 0 0;font-size:12px;line-height:1.8}
 @media(max-width:700px){.pickup{padding-top:33px;padding-bottom:8px}.pickup-card{grid-template-columns:1fr}.pickup-media img{height:auto}.pickup-copy{padding:24px 22px 25px}.pickup-copy h3{font-size:24px}.pickup-copy p{font-size:15px}.contact-routes{margin-top:17px}.contact-route strong{font-size:17px}}
+@media(max-width:700px){.pickup-card-secondary{grid-template-columns:1fr;margin-top:16px}.pickup-card-secondary .pickup-copy{padding:23px 22px 25px}.pickup-card-secondary .pickup-copy h3{font-size:22px}}
 
 .about-contact{scroll-margin-top:24px}
 @media(max-width:700px){.nav .contact-nav{display:block;border:0;padding:3px 0;font-size:12px}}
