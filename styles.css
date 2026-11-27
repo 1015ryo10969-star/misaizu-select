@@ -104,3 +104,201 @@
 .business-works span{display:block;margin-top:4px;color:var(--muted);font-size:11px;line-height:1.5}
 .business-note{margin:8px 0 0;color:var(--muted);font-size:11px;line-height:1.6}
 @media(max-width:700px){.business-intro{padding:20px 0}.business-intro-top{display:block}.business-intro h2{font-size:19px}.business-intro-top p{font-size:13px}.business-intro-top .button{margin-top:10px}.business-work-head{margin-top:13px}.business-works{grid-template-columns:1fr;gap:6px}.business-works a{padding:8px 11px}.business-works strong{font-size:14px}.business-works span{font-size:11px}.business-note{font-size:10px}}
+
+.black-friday {
+  --sale-gold: #efd49a;
+  --sale-line: #5f5140;
+  padding: clamp(20px, 3vw, 36px);
+  margin-bottom: 16px;
+  border: 1px solid var(--sale-line);
+  border-radius: 6px;
+  background: #171514;
+  color: #f6f0e5;
+}
+.black-friday-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  align-items: center;
+  gap: clamp(20px, 3vw, 36px);
+}
+.black-friday h2 {
+  margin: 0 0 14px;
+  color: var(--sale-gold);
+  font: 500 clamp(23px, 3vw, 36px)/1.35 var(--serif);
+  overflow-wrap: anywhere;
+}
+.black-friday-dates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 14px;
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+  font-size: 13px;
+}
+.black-friday-dates strong {
+  margin-right: .35em;
+  color: var(--sale-gold);
+}
+.black-friday-intro p {
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+.black-friday p.black-friday-quote {
+  margin: 14px 0 0;
+  padding-left: 12px;
+  border-left: 2px solid #c36762;
+  color: var(--sale-gold);
+  font-weight: 700;
+}
+.black-friday-banner,
+.black-friday-card > a {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--sale-line);
+  border-radius: 5px;
+  color: inherit;
+}
+.black-friday-banner {
+  height: auto;
+  background: #713039;
+}
+.black-friday-banner:hover,
+.black-friday-card > a:hover {
+  border-color: var(--sale-gold);
+  color: inherit;
+}
+.black-friday a:focus-visible {
+  outline-color: var(--sale-gold);
+}
+.black-friday-banner img {
+  width: 100%;
+  height: auto;
+}
+.black-friday-banner-caption {
+  display: grid;
+  gap: 2px;
+  padding: 10px 16px;
+  font-size: 13px;
+}
+.black-friday-banner-caption strong {
+  font-size: 15px;
+}
+.black-friday-guides {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 22px;
+}
+.black-friday-card > a {
+  background: #24201d;
+}
+.black-friday-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #171514;
+}
+.black-friday-card-copy {
+  padding: 12px 15px 14px;
+}
+.black-friday-source,
+.black-friday-card h3 [aria-hidden="true"] {
+  color: var(--sale-gold);
+}
+.black-friday-count {
+  white-space: nowrap;
+}
+.black-friday-source {
+  font-size: 12px;
+}
+.black-friday-card h3 {
+  margin: 2px 0 5px;
+  font: 500 17px/1.5 var(--serif);
+}
+.black-friday-card p,
+.black-friday-note {
+  margin: 0;
+  color: #e1d8cd;
+  font-size: 13px;
+  line-height: 1.65;
+}
+.black-friday-note {
+  margin-top: 16px;
+}
+
+.business-case-heading {
+  margin: 22px 0 8px;
+  color: var(--green);
+  font-size: 14px;
+}
+.business-case {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2.1fr);
+  align-items: start;
+  gap: 20px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #fffefa;
+}
+.business-case-image {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+.business-case-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.business-case-categories li {
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: #e9ece3;
+  color: var(--ink);
+  font-size: 11px;
+  line-height: 1.5;
+}
+.business-case h4 {
+  margin: 6px 0;
+  font: 500 19px/1.5 var(--serif);
+}
+.business-case p {
+  margin: 0 0 5px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.65;
+}
+.business-case p.business-case-publication {
+  margin-top: 8px;
+}
+.business-case .button,
+.business-case-actions .button {
+  margin-top: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  text-align: center;
+}
+.business-case .button {
+  gap: 6px;
+}
+@media (max-width: 700px) {
+  .black-friday-main,
+  .black-friday-guides,
+  .business-case {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .black-friday,
+  .business-case {
+    padding: 14px;
+  }
+  .business-case {
+    gap: 12px;
+  }
+}
